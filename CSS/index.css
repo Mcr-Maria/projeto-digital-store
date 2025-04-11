@@ -288,10 +288,89 @@ main {
         }
     }
 }
-#produtos{
-    display: flex;
-    align-items: center;
+#produtos {
+    margin-top: 120px;
+    padding: 0 100px;
+
+    & .titulo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+        & h3 {
+            font-size: 24px;
+            line-height: 38px;
+            color: #474747;
+        }
+
+        & a {
+            color: #C92071;
+            font-size: 18px;
+        }
+    }
+
+    & .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 24px;
+
+        & .card {
+           
+            & a {
+                display: block;
+                color: black;
+
+                & .imagem {
+                    background-color: white;
+                    box-shadow: 0 0 50px #00000015;
+                    height: 320px;
+                    border-radius: 4px;
+                    padding: 20px;
+                    margin-bottom: 18px;
+
+                    h6 {
+                        font-size: 14px;
+                        text-transform: uppercase;
+                        line-height: 32px;
+                        padding: 0 15px;
+                        border-radius: 20px;
+                        background-color: #E7FF86;
+                        color: #474747;
+                        display: inline-block;
+                        margin-bottom: 10px;
+                    }
+                }
+
+                & span {
+                    color: #8F8F8F;
+                    font-size: 12px;
+                    line-height: 24px;
+                }
+
+                & h4 {
+                    font-size: 24px;
+                    line-height: 38px;
+                    color: #474747;
+                    font-weight: normal;
+                }
+
+                & h5 {
+                    font-size: 24px;
+                    line-height: 38px;
+
+                    & del{
+                        color: #474747;
+                        font-weight: normal;
+                        text-decoration: line-through;
+                        margin-right: 8px;
+                    }
+                }
+            }
+        }
+    }
 }
+
 
 
         
