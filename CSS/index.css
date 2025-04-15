@@ -444,7 +444,7 @@ main {
 
 }
 footer{
-    background-color: black;
+    background-color: #1f1f1f;
     color: white;
     padding: 100px 100px 0 100px;
 
@@ -473,5 +473,40 @@ footer{
                 }
             }
         }
+        & .sitemap{
+            display: flex;
+            gap: 50px;
+            & div{
+                width: 170px;
+
+                & h5{
+                font-size: 18px;
+                margin-bottom: 28px;
+
+                }
+                & a{
+                    display: block;
+                    color: white;
+                    transition-duration: 200ms;
+                    margin-bottom: 18px;
+                    &:hover{
+                        color: #C92071;
+                        margin-left: 10px;
+                    }
+                    & address{
+                        font-style: normal;
+                    }
+
+                }
+            }
+        }
+    }
+    & h6{
+        text-align: center;
+        padding: 22px 0;
+        border-top: 1px solid #FFFFFF50;
+        font-size: 13px;
+        font-weight: normal;
+        margin-top: 34px;
     }
 }
